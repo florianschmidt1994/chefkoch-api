@@ -48,7 +48,8 @@ class ChefkochApi:
         login_data = {
             "username": username,
             "password": password,
-            "remember_me": "on"
+            "remember_me": "on",
+            "context": "login/init"
         }
         res = session.post(login_url, login_data)
 
